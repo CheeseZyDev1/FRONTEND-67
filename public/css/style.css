@@ -1,122 +1,140 @@
-/* Set font family and size for the whole page */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Set font family and base styles */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-  }
-  
-  /* Center the main heading */
-  h1 {
+    background-color: #ECF0F1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the main heading */
+h1 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
-    font-size: 36px;
+    font-size: 40px;
+    font-weight: 600;
     color: #2C3E50;
-  }
-  
-  /* Style the table */
-  table {
+    text-transform: uppercase;
+}
+
+/* Style the table */
+.book-table {
+    width: 80%;
+    margin: 0 auto; /* Center the table */
     border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
     text-align: left;
-    padding: 16px;
-  }
-  
-  th {
+    padding: 14px;
+}
+
+th {
     background-color: #2C3E50;
     color: white;
     font-weight: 600;
     text-transform: uppercase;
-  }
-  
-  tr:nth-child(even) {
+}
+
+tr:nth-child(even) {
     background-color: #f5f5f5;
-  }
-  
+}
+
+tr:hover {
+    background-color: #D5DBDB;
+    transition: 0.3s;
+}
+
 /* Style the form */
 form {
     width: 50%;
-    margin: auto;
-    border: 2px solid #2C3E50;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  label {
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #2C3E50;
+}
+
+label {
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  input[type="text"] {
+    color: #2C3E50;
+}
+
+input[type="text"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 5px;
-    border: none;
-    background-color: #f2f2f2;
-  }
-  
-  input[type="submit"] {
+    border: 2px solid #BDC3C7;
+    background-color: #F2F2F2;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #2C3E50;
+    background-color: white;
+    outline: none;
+}
+
+input[type="submit"] {
     background-color: #2C3E50;
     color: white;
     border: none;
-    padding: 10px 16px;
+    padding: 12px 18px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
-  }
-  
-  /* Style the links */
-  a {
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1F2D3D;
+}
+
+/* Style the links */
+a {
     display: inline-block;
-    margin: 10px;
     color: #2C3E50;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
-    transition: border-bottom-color 0.2s;
-  }
-  
-  a:hover {
-    border-bottom-color: #2C3E50;
-  }
+    transition: border-bottom-color 0.2s, color 0.2s;
+}
 
-  .link-center {
+a:hover {
+    border-bottom-color: #2C3E50;
+    color: #1F2D3D;
+}
+
+/* Centered links */
+.link-center {
     text-align: center;
     margin-top: 20px;
-  }
-  
-  .link-center a {
-    display: inline-block;
-    margin: 10px;
-    color: #2C3E50;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom-color 0.2s;
-  }
-  
-  .link-center a:hover {
-    border-bottom-color: #2C3E50;
-  }
+}
 
-/* Style the table */
-.book-table {
-    border-collapse: collapse;
-    width: 75%;
-    margin: 0 auto; /* center the table */
-    margin-bottom: 20px;
-    border-bottom: 2px solid #2C3E50;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 16px;
-  }
-  
+.link-center a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.link-center a:hover {
+    background-color: #1F2D3D;
+}
