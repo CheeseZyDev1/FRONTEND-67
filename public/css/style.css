@@ -120,21 +120,27 @@ a:hover {
     color: #1F2D3D;
 }
 
-/* Centered links */
-.link-center {
-    text-align: center;
+/* Centered buttons and links */
+.button-container {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
-.link-center a {
+/* Style for buttons */
+.button-container a {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 12px 18px;
     background-color: #2C3E50;
     color: white;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 10px;
     transition: 0.3s;
 }
 
-.link-center a:hover {
+.button-container a:hover {
     background-color: #1F2D3D;
 }
